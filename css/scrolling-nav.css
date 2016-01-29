@@ -10,12 +10,12 @@
 /*---------------------------------- FONTS -------------------------------------*/
   @font-face {
     font-family: "Raleway";
-    src: url('fonts/raleway-normal-normal.ttf');
+    src: url('../fonts/raleway-normal-normal.ttf');
 }
 @font-face {
     font-family: "Raleway";
     font-style: bold;
-    src: url('fonts/raleway-bold-normal.ttf');
+    src: url('../fonts/raleway-bold-normal.ttf');
 }
 	
 	
