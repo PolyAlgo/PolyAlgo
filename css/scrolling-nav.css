@@ -4,14 +4,49 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+
+
+/*---------------------------------- FONTS -------------------------------------*/
+  @font-face {
+    font-family: "Raleway";
+    src: url('fonts/raleway-normal-normal.ttf');
+}
+@font-face {
+    font-family: "Raleway";
+    font-style: bold;
+    src: url('fonts/raleway-bold-normal.ttf');
+}
+	
+	
+/* LOGO */
+#logo-poly
+{
+	font-size: 20pt;
+}
+
+#logo-algo
+{
+	color: #BE1E2D; 
+	font-size: 20pt;
+}	
+	
+	
+/* MAIN */
 body {
     width: 100%;
     height: 100%;
+	font-family: "Raleway", Helvetica, sans-serif;
 }
 
 html {
     width: 100%;
     height: 100%;
+}
+
+.justified
+{
+	text-align: justify;
 }
 
 @media(min-width:767px) {
@@ -34,21 +69,16 @@ html {
     .top-nav-collapse {
         padding: 0;
     }
-	
-	.top-nav-collapse img {
-		width: 102px; 
-		height: 24px;
-	}
-	
+
 	.navbar-nav li a {
 		-webkit-transition: line-height .5s ease-in-out;
         -moz-transition: line-height .5s ease-in-out;
         transition: line-height .5s ease-in-out;
-		line-height: 32px;
+		line-height: 25px;
 	}
 	
 	.top-nav-collapse li a {
-		line-height: 24px;
+		line-height: 26px;
 	}
 }
 @media(max-width:767px) {
