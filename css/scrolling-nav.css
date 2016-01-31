@@ -4,12 +4,10 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-
-
-
 /*---------------------------------- FONTS -------------------------------------*/
   @font-face {
     font-family: "Raleway";
+    font-style: normal;
     src: url('../fonts/raleway-normal-normal.ttf');
 }
 @font-face {
