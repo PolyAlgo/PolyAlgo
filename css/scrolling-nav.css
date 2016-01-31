@@ -7,12 +7,14 @@
 /*---------------------------------- FONTS -------------------------------------*/
   @font-face {
     font-family: "Raleway";
-    font-style: normal;
+    font-weight: normal;
+	font-style: normal;
     src: url('../fonts/raleway-normal-normal.ttf');
 }
 @font-face {
     font-family: "Raleway";
-    font-style: bold;
+    font-weight: bold;
+	font-style: normal;
     src: url('../fonts/raleway-bold-normal.ttf');
 }
 	
