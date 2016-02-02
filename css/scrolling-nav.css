@@ -11,6 +11,14 @@
 	font-style: normal;
     src: url('../fonts/raleway-normal-normal.ttf');
 }
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: medium;
+	font-style: normal;
+    src: url('../fonts/raleway-medium-normal.ttf');
+}
+
 @font-face {
     font-family: "Raleway";
     font-weight: bold;
@@ -20,9 +28,21 @@
 	
 	
 /* LOGO */
+h1, h2, h3
+{
+	color: #BE1E2D; 
+	font-weight: bold;
+}
+
+p
+{
+	font-weight: medium;
+}
+
 #logo-poly
 {
 	font-size: 20pt;
+	font-weight: normal;
 }
 
 #logo-algo
