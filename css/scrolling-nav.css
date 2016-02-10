@@ -12,6 +12,13 @@
     src: url('../fonts/raleway-normal-normal.ttf');
 }
 
+ @font-face {
+    font-family: "Raleway";
+    font-weight: semibold;
+	font-style: normal;
+    src: url('../fonts/raleway-semibold-normal.ttf');
+}
+
 @font-face {
     font-family: "Raleway";
     font-weight: medium;
@@ -51,6 +58,58 @@ p
 	font-size: 20pt;
 }	
 	
+/* ALGORITHMES */
+
+@keyframes rotate-expand {
+    from {  -ms-transform: 		rotate(-90deg); /* IE 9 */
+			-webkit-transform:  rotate(-90deg); /* Chrome, Safari, Opera */
+			transform: 			rotate(-90deg); }
+    to {  -ms-transform: 		rotate(0deg); /* IE 9 */
+			-webkit-transform:  rotate(0deg); /* Chrome, Safari, Opera */
+			transform: 			rotate(0deg); }
+}
+
+
+@keyframes rotate-collapse {
+    from {  -ms-transform: 		rotate(0deg); /* IE 9 */
+			-webkit-transform:  rotate(0deg); /* Chrome, Safari, Opera */
+			transform: 			rotate(0deg); }
+    to {  -ms-transform: 		rotate(-90deg); /* IE 9 */
+			-webkit-transform:  rotate(-90deg); /* Chrome, Safari, Opera */
+			transform: 			rotate(-90deg); }
+}
+
+.competition-name
+{
+	cursor: pointer;
+	color: darkslategray;
+	font-size: 16pt;
+	font-weight: semibold;
+	text-align: left;
+	
+}
+.competition-name .glyphicon-chevron-down
+{
+	font-size: 11pt;
+	font-weight: normal;
+	color: #BE1E2D;
+}
+	
+.rotate-collapse
+{
+	animation-name: rotate-collapse;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.rotate-expand
+{
+	animation-name: rotate-expand;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
 	
 /* MAIN */
 body {
@@ -69,7 +128,13 @@ html {
 	text-align: justify;
 }
 
-@media(min-width:767px) {
+.centered
+{
+	text-align: center;
+}
+
+
+@media (min-width:767px) and (min-height:500px){
     .navbar {
         padding: 20px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -100,42 +165,105 @@ html {
 	.top-nav-collapse li a {
 		line-height: 26px;
 	}
+	
+	.intro-section {
+		height: 100%;
+		padding-top: 150px;
+		text-align: center;
+		background-size: 100%;
+		background: #fff;
+	}
+
+	.membres-section {
+		height: 100%;
+		padding-top: 75px;
+		text-align: center;
+		background: #eee;
+	}
+
+	.partenaires-section {
+		height: 100%;
+		padding-top: 75px;
+		text-align: center;
+		background: #fff;
+	}
+	
+	.contacter-section {
+		height: 100%;
+		padding-top: 75px;
+		text-align: center;
+		background: #eee;
+	}
+	
+	.footer-section {
+		padding-top: 30px;;
+		padding-bottom: 30px;
+		text-align: center;
+		background: #fff;
+	}
 }
-@media(max-width:767px) {
+@media (max-width:767px), (max-height:500px) {
 	.navbar img {
 		width: 130px; 
 		height: 32px;
 		padding: 0;
 	}
-}
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
+	
+	.intro-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+		background: #fff;
+	}
 
-.intro-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
+	.membres-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+		background: #eee;
+	}
+	
+	.partenaires-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+		background: #fff;
+	}
+	
+	.contacter-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+		background: #eee;
+	}
+	
+	.footer-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		text-align: center;
+		background: #fff;
+	}
 }
 
-.about-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+.fa {
+	color: #313131;
 }
 
-.services-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
+.fa:hover
+{
+	cursor: pointer;
+	color: firebrick;
 }
 
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+
+.circle-image{
+    width: 175px;
+    height: 175px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
 }
