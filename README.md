@@ -1,26 +1,12 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Scrolling Nav](http://startbootstrap.com/template-overviews/scrolling-nav/)
+# [PolyAlgo](http://aboisier.github.io/Polyalgo)
 
-[Scrolling Nav](http://startbootstrap.com/template-overviews/scrolling-nav/) is an unstyled one page starter template with a collapsing, smooth scrolling navigation bar for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+Vous trouverez sur ce repository le site web du club **PolyAlgo** de l'[école Polytechnique de Montréal](http://www.polymtl.ca/). Vous trouverez également des solutions à divers challenges de programmation et d'algorithmie, dans le sous-dossier Documentation.
 
-## Getting Started
+## Liens
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+* https://www.facebook.com/groups/1077736692265060/?fref=ts
+* http://www.aboisier.github.io/Polyalgo
 
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-scrolling-nav/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/scrolling-nav/).
-
-## Creator
-
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
+## Copyright et License
+Ce site web est basé sur le template [scrolling nav](http://startbootstrap.com/template-overviews/scrolling-nav/).
 Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-scrolling-nav/blob/gh-pages/LICENSE) license.
