@@ -34,31 +34,16 @@
 }
 	
 	
-/* LOGO */
-h1, h2, h3
-{
-	color: #BE1E2D; 
-	font-weight: bold;
-}
+/*---- LOGO ----*/
+h1, h2, h3 { color: #BE1E2D; font-weight: bold; margin-bottom: 30px; }
 
-p
-{
-	font-weight: medium;
-}
+p { font-weight: medium; }
 
-#logo-poly
-{
-	font-size: 20pt;
-	font-weight: normal;
-}
+#logo-poly { font-size: 20pt; font-weight: normal; }
 
-#logo-algo
-{
-	color: #BE1E2D; 
-	font-size: 20pt;
-}	
+#logo-algo { color: #BE1E2D; font-size: 20pt; }	
 	
-/* ALGORITHMES */
+/* PAGE DOC */
 
 @keyframes rotate-expand {
     from {  -ms-transform: 		rotate(-90deg); /* IE 9 */
@@ -68,7 +53,6 @@ p
 			-webkit-transform:  rotate(0deg); /* Chrome, Safari, Opera */
 			transform: 			rotate(0deg); }
 }
-
 
 @keyframes rotate-collapse {
     from {  -ms-transform: 		rotate(0deg); /* IE 9 */
@@ -88,6 +72,7 @@ p
 	text-align: left;
 	
 }
+
 .competition-name .glyphicon-chevron-down
 {
 	font-size: 11pt;
@@ -111,28 +96,57 @@ p
 	animation-fill-mode: forwards;
 }
 	
-/* MAIN */
-body {
-    width: 100%;
-    height: 100%;
-	font-family: "Raleway", Helvetica, sans-serif;
-}
+/*---- GÉNÉRAL ----*/
+body { width: 100%; height: 100%; font-family: "Raleway", Helvetica, sans-serif; }
 
-html {
-    width: 100%;
-    height: 100%;
-}
+html { width: 100%; height: 100%; }
 
-.justified
+.justified { text-align: justify; }
+
+.centered { text-align: center; }
+
+
+/*---- NOS MEMBRES ----*/
+.photo-membre { width:  150px; height: 150px; }
+
+.nom-membre
 {
-	text-align: justify;
+    font-weight: regular;
+    font-size: 14pt;
+    color: #BE1E2D;
+    margin-top: 5px;
+    margin-bottom: 7px;
 }
 
-.centered
+.titre-membre { font-weight: regular; font-size: 12pt; margin-bottom: 4px; }
+
+.diviseur-membre
 {
-	text-align: center;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #BE1E2D;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;  
 }
 
+    
+
+
+
+/*---- FOOTER ----*/
+.fa { color: #313131; }
+
+.fa:hover { cursor: pointer; color: #BE1E2D; }
+
+/*---- SECTIONS ----*/
 
 @media (min-width:767px) and (min-height:500px){
     .navbar {
@@ -202,6 +216,7 @@ html {
 		background: #fff;
 	}
 }
+
 @media (max-width:767px), (max-height:500px) {
 	.navbar img {
 		width: 130px; 
@@ -243,27 +258,4 @@ html {
 		text-align: center;
 		background: #fff;
 	}
-}
-
-.fa {
-	color: #313131;
-}
-
-.fa:hover
-{
-	cursor: pointer;
-	color: firebrick;
-}
-
-
-.circle-image{
-    width: 175px;
-    height: 175px;
-    position: relative;
-    overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
 }
