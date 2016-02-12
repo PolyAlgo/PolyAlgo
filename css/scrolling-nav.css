@@ -34,12 +34,18 @@
 }
 	
 	
+ nav
+ {
+    background-image: url('../images/grey-noise.png');
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+ }
+ 
 /*---- LOGO ----*/
 h1, h2, h3 { color: #BE1E2D; font-weight: bold; margin-bottom: 30px; }
 
 p { font-weight: medium; }
 
-#logo-poly { font-size: 20pt; font-weight: normal; }
+#logo-poly { color: #4d4e4e; font-size: 20pt; font-weight: normal; }
 
 #logo-algo { color: #BE1E2D; font-size: 20pt; }	
 	
@@ -137,14 +143,10 @@ html { width: 100%; height: 100%; }
     text-align: center;  
 }
 
-    
-
-
-
 /*---- FOOTER ----*/
 .fa { color: #313131; }
 
-.fa:hover { cursor: pointer; color: #BE1E2D; }
+.fa:hover { cursor: pointer; color: #eee; }
 
 /*---- SECTIONS ----*/
 
@@ -154,6 +156,7 @@ html { width: 100%; height: 100%; }
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+
     }
 
 	.navbar img {
@@ -186,6 +189,7 @@ html { width: 100%; height: 100%; }
 		text-align: center;
 		background-size: 100%;
 		background: #fff;
+        background-image: url('../images/white-noise.png');
 	}
 
 	.membres-section {
@@ -193,6 +197,7 @@ html { width: 100%; height: 100%; }
 		padding-top: 75px;
 		text-align: center;
 		background: #eee;
+        background-image: url('../images/white-noise.png');
 	}
 
 	.partenaires-section {
@@ -200,13 +205,16 @@ html { width: 100%; height: 100%; }
 		padding-top: 75px;
 		text-align: center;
 		background: #fff;
+        background-image: url('../images/grey-noise.png');
 	}
 	
 	.contacter-section {
 		height: 100%;
 		padding-top: 75px;
 		text-align: center;
+        height: 82%;
 		background: #eee;
+        background-image: url('../images/white-noise.png');
 	}
 	
 	.footer-section {
@@ -214,6 +222,9 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 30px;
 		text-align: center;
 		background: #fff;
+        background-image: url('../images/red-noise.png');
+        box-shadow: 0px -5px 20px rgba(0,0,0,0.25);
+        height: 18%;
 	}
 }
 
@@ -222,6 +233,7 @@ html { width: 100%; height: 100%; }
 		width: 130px; 
 		height: 32px;
 		padding: 0;
+        background-image: url('../images/grey-noise.png');
 	}
 	
 	.intro-section {
@@ -229,6 +241,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #fff;
+        background-image: url('../images/white-noise.png');
 	}
 
 	.membres-section {
@@ -236,6 +249,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #eee;
+        background-image: url('../images/white-noise.png');
 	}
 	
 	.partenaires-section {
@@ -243,6 +257,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #fff;
+        background-image: url('../images/grey-noise.png');
 	}
 	
 	.contacter-section {
@@ -250,6 +265,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #eee;
+        background-image: url('../images/white-noise.png');
 	}
 	
 	.footer-section {
@@ -257,5 +273,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #fff;
+        background-image: url('../images/red-noise.png');
+        box-shadow: 0px -5px 20px rgba(0,0,0,0.25);
 	}
 }
