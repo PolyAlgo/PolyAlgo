@@ -8,11 +8,15 @@ function getUser(user, callback)
 var write = function (data)
 {
 	$.each(data, function (index, val) {
-		console.log(val.name);
-		if(val.name != "undefined")
+		
+		if(val.name != undefined)
 		{
-			str = '<div class="row">' + 
-					'<div class="col-lg-12">';
+			console.log(val.name);
+			str = '<div class="row"> <div class="col-lg-12">' + 
+					'<p  class="competition-name" onclick="rotateOnClick(\'#' + val.name.replace(/\s+/g, '') + 'glyph\', \'#' + val.name.replace(/\s+/g, '') + '\')"><span id=\'' + val.name.replace(/\s+/g, '') + 'glyph\' class="glyphicon glyphicon-chevron-down rotate-collapse"></span> '+ val.name + ' </p>' +
+					'<div id=\''+ val.name.replace(/\s+/g, '')+ '\' aria-expanded=\'false\' class=\'collapse\'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div> </div></div><br>';
+			$('#competitions').append(str);
+			console.log(str);
 		}
 
 	});
