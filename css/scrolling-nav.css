@@ -85,6 +85,12 @@ p { font-weight: medium; }
 	font-weight: normal;
 	color: #BE1E2D;
 }
+
+.challenge
+{
+	text-align: left;
+	margin-left: 20px;
+}
 	
 .rotate-collapse
 {

@@ -1,26 +1,44 @@
 const solutions = 'https://api.github.com/repos/Aboisier/Polyalgo/contents/Documentation';
 
-function getUser(user, callback)
-{
-	$.getJSON('https://api.github.com/users' + user, callback);
-}
 
-var write = function (data)
+var writeChallenges = function(data, state, id)
 {
-	$.each(data, function (index, val) {
+	if(state == "success")
+	{
+		//('#' + id).append('<ul>');
+		$.each(data, function (index, val) {
+			
+			if(val.name != undefined)
+			{	
+				str = '<li class=\'challenge\'><a href=\'' + val.html_url + '\'>' + val.name + '</a></li>'
 		
-		if(val.name != undefined)
-		{
-			console.log(val.name);
-			str = '<div class="row"> <div class="col-lg-12">' + 
-					'<p  class="competition-name" onclick="rotateOnClick(\'#' + val.name.replace(/\s+/g, '') + 'glyph\', \'#' + val.name.replace(/\s+/g, '') + '\')"><span id=\'' + val.name.replace(/\s+/g, '') + 'glyph\' class="glyphicon glyphicon-chevron-down rotate-collapse"></span> '+ val.name + ' </p>' +
-					'<div id=\''+ val.name.replace(/\s+/g, '')+ '\' aria-expanded=\'false\' class=\'collapse\'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div> </div></div><br>';
-			$('#competitions').append(str);
-			console.log(str);
-		}
-
-	});
+				$('#' + id).append(str);
+			}
+		});
+		//('#' + id).append('</ul>');
+	}
+	
 }
 
-$.getJSON('https://api.github.com/repos/Aboisier/Polyalgo/contents/Documentation', write);
-getUser('', write);
+var writeCategories = function (data, state)
+{
+	if(state == "success")
+	{
+		$.each(data, function (index, val) {
+			
+			if(val.name != undefined)
+			{	
+				var name = val.name.replace(/\s+/g, '');
+				
+				str = '<div class="row"> <div class="col-lg-12">' + 
+						'<p  class="competition-name" onclick="rotateOnClick(\'#' + name + 'glyph\', \'#' + name + '\')"><span id=\'' + name + 'glyph\' class="glyphicon glyphicon-chevron-down rotate-collapse"></span> '+ val.name + ' </p>' +
+						'<div id=\''+ name + '\' aria-expanded=\'false\' class=\'collapse\'>  </div> </div></div><br>';
+				$('#competitions').append(str);
+				
+				$.getJSON(val.url, function(data, state) { writeChallenges(data, state, name); });
+			}
+		});
+	}
+}
+
+$.getJSON('https://api.github.com/repos/Aboisier/Polyalgo/contents/Documentation', writeCategories);
