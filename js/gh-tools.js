@@ -1,11 +1,17 @@
-const solutions = 'https://api.github.com/repos/Aboisier/Polyalgo/contents/Documentation';
+// Le lien vers le dossier contenant tous les compétitions et solutions.
+const dir = 'https://api.github.com/repos/Aboisier/Polyalgo/contents/Documentation';
 
-
+/** 
+ * Écrit le nom de chaque challenge d'une catégorie avec un lien vers
+ * le dossier contenant l'énoncé et les solutions.
+ * @param {JSON} data - La réponse JSON de call de l'api de GitHub.
+ * @param {state} state - L'état de la réponse du call de l'api de GitHub.
+ * @param {string} id - L'ID du div dans lequel ajouter les challenges.
+ */ 
 var writeChallenges = function(data, state, id)
 {
 	if(state == "success")
 	{
-		//('#' + id).append('<ul>');
 		$.each(data, function (index, val) {
 			
 			if(val.name != undefined)
@@ -15,11 +21,15 @@ var writeChallenges = function(data, state, id)
 				$('#' + id).append(str);
 			}
 		});
-		//('#' + id).append('</ul>');
 	}
-	
 }
 
+/** 
+ * Génère le html de chaque catégorie de challenge. Pour chaque dossier 
+ * contenu dans  le dossier Documentation du repo, une catégorie est créée.
+ * @param {JSON} data - La réponse JSON de call de l'api de GitHub.
+ * @param {state} state - L'état de la réponse du call de l'api de GitHub.
+ */ 
 var writeCategories = function (data, state)
 {
 	if(state == "success")
@@ -41,4 +51,5 @@ var writeCategories = function (data, state)
 	}
 }
 
-$.getJSON('https://api.github.com/repos/Aboisier/Polyalgo/contents/Documentation', writeCategories);
+// Génère le code de tous les challenges solutions de la page algorithmes.
+$.getJSON(dir, writeCategories);
