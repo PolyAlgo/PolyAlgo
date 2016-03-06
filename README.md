@@ -5,7 +5,7 @@ Vous trouverez sur ce repository le site web du club **PolyAlgo** de l'[école P
 ## Liens
 
 * [Page facebook du club](https://www.facebook.com/PolyAlgo)
-* [Site web du club](http://www.aboisier.github.io/Polyalgo)
+* [Site web du club](http://aboisier.github.io/Polyalgo/)
 
 ## Copyright et License
 Ce site web est basé sur le template [scrolling nav](http://startbootstrap.com/template-overviews/scrolling-nav/).
