@@ -157,6 +157,10 @@ html { width: 100%; height: 100%; }
     text-align: center;  
 }
 
+.membres-section .fa { color: #313131; }
+
+.membres-section .fa:hover { cursor: pointer; color: #be1e2d; }
+
 /*---- FOOTER ----*/
 .fa { color: #313131; }
 
