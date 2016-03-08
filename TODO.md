@@ -10,7 +10,7 @@ Général
 Page d'accueil
 ---
 + Ajouter les textes
-+ Changer la couleur de survol des glyphes de rouge à blanc (excepté ceux du footer)
++ <del>Changer la couleur de survol des glyphes de rouge à blanc (excepté ceux du footer)</del>
 + Ajouter un formulaire de contact
 
 Page algorithmes
