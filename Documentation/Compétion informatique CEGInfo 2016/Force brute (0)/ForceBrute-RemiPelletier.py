@@ -1,5 +1,5 @@
 #Auteur:   Rémi Pelletier
-#Fichier:  ForceBrute.py
+#Fichier:  ForceBrute-RemiPelletier.py
 #Problème: Force brute (Compétition informatique CEGInfo-CEGL 2016)
 #Score:    45.45/50 (le dernier test échoue en raison d'un timeout)
 
