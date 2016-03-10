@@ -14,13 +14,6 @@ class Node:
         self.value = 0
         self.nNodes = 1
         self.childs = []
-    
-    
-def factorial(n):
-    result = 1
-    for i in range(1, n+1):
-        result *= i
-    return result
 
 def multiplyRange(start, end):
     result = 1
@@ -29,7 +22,7 @@ def multiplyRange(start, end):
     return result
 
 def computeNbTrees(length):
-    return multiplyRange(length+2, 2*length) // (factorial(length))
+    return multiplyRange(length+2, 2*length) // multiplyRange(1, length)
 
 def getWorstLength(node):
     length = 0
