@@ -20,6 +20,16 @@ Ensuite, créez un fichier README.md qui contiendra l'énoncé du challenge. Veu
   + Mettre les inter-titres (input example, output example, explanation, etc.) en titre de niveau 5 (#####)
   + Mettre les exemples d'input/output en paragraphe de code (mettre quatre espaces avant chaque ligne)
 
+Pour ajouter une solution à un énoncé, il suffit d'effectuer un pull request avec votre fichier ajouté. Il faut également mettre à jour le nombre de solutions entre parenthèses dans le nom du dossier. Il est conseillé de commenter son code et d'inclure un header au début de votre fichier qui devrait contenir le nom du fichier, votre nom, la date et une description indiquant le nombre de testcases que résoud votre solution, ou le nombre de points qu'elle donne, un lien vers le challenge original, ainsi que toute autre information pertinente. L'utilisation de Bitly ou TinyURL est conseillée. Par exemple :
+
+    //-----------------------------------------------------------------------------
+    //     Fichier : Lorem ipsum - Jean-Guy Poitras.cpp
+    //      Auteur : Jean-Guy Poitras
+    //        Date : 2016-10-03
+    // Description : Ma solution pour le challenge Lorem ipsum (http://bit.ly/1TXgt4s).
+    //               Cette solution m'a valu 89/100 points.
+    //-----------------------------------------------------------------------------
+
 <a name="web"></a> Site web
 ---
 Pour participer au site web, vous pouvez consulter le fichier [TODO.md](https://github.com/Aboisier/Polyalgo/blob/gh-pages/TODO.md) qui contient une liste des choses à faire. 
