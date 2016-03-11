@@ -33,13 +33,17 @@
     src: url('../fonts/raleway-bold-normal.ttf');
 }
 	
-	
+/*---- NAV ----*/	
  nav
  {
     background-image: url('../images/grey-noise.png');
     box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
  }
  
+.navbar-active
+{
+    background-color: #e7e7e7;
+}
 /*---- LOGO ----*/
 h1, h2, h3 { color: #BE1E2D; font-weight: bold; margin-bottom: 30px; }
 
