@@ -119,7 +119,21 @@ html { width: 100%; height: 100%; }
 
 .justified { text-align: justify; }
 
-.centered { text-align: center; }
+.centered  { text-align: center; }
+
+.right     { text-align: right; }
+
+.form-group
+{
+    padding-top: 1%;
+    padding-bottom : 2%;
+}
+
+.textarea
+{
+    padding-top: 1%;
+    margin-bottom : 2%;
+}
 
 /* TODO: Trouver une couleur pour la sélection
 ::selection {
