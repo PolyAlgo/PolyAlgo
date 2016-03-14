@@ -1,6 +1,6 @@
 $("#contact-form").submit(function() {
     $.ajax({
-        url: "//formspree.io/a.boisier@polyalgo.org",
+        url: "//formspree.io/antoine.boisier@polyalgo.org",
         method: "POST",
         data: { _subject: "Nouveau message de " + $("#contact-name").val(),
                 nom:      $("#contact-name").val(),
