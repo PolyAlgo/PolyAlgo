@@ -1,8 +1,17 @@
-$("#contact-send").click(function() {
-    var link = "mailto:aboisiermichaud@gmail.com"
-             + "?cc=a.boisier@polymtl.ca"
-             + "&subject=" + escape("Whadup boss")
-             + "&body=" + escape($("#contact-message").value) + "#contact";
+$("#contact-form").submit(function() {
+    $.ajax({
+        url: "//formspree.io/a.boisier@polyalgo.org",
+        method: "POST",
+        data: { _subject: "Nouveau message de " + $("#contact-name").val(),
+                nom:      $("#contact-name").val(),
+                _replyto: $("#contact-email").val(),
+                _gotcha:  $("#contact-gotcha").val(),
+                message:  $("#contact-message").val() },
+        dataType: "json"
+    });
+ 
+    $("#contact-form").collapse();
+    $("#contact-feedback").fadeIn(50);
 
-    window.location.href = link;
+    return false;
 });

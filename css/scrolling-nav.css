@@ -117,11 +117,13 @@ body { width: 100%; height: 100%; font-family: "Raleway", Helvetica, sans-serif;
 
 html { width: 100%; height: 100%; }
 
+.left      { text-align: left;    }
+
 .justified { text-align: justify; }
 
-.centered  { text-align: center; }
+.centered  { text-align: center;  }
 
-.right     { text-align: right; }
+.right     { text-align: right;   }
 
 .form-group
 {
@@ -134,7 +136,7 @@ html { width: 100%; height: 100%; }
     padding-top: 1%;
     margin-bottom : 2%;
 }
-
+ 
 /* TODO: Trouver une couleur pour la sélection
 ::selection {
   background: rgba(255, 0, 0, 0.25); 
