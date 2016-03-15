@@ -11,7 +11,7 @@ Page d'accueil
 ---
 + Ajouter les textes
 + <del>Changer la couleur de survol des glyphes de rouge à blanc (excepté ceux du footer)</del>
-+ Ajouter un formulaire de contact
++ <del>Ajouter un formulaire de contact</del>
 
 Page algorithmes
 ---
