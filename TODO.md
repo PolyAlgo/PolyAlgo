@@ -17,4 +17,4 @@ Page algorithmes
 ---
 + <del>Afficher le nombre de solutions à côté de chaque challenge</del>
 + Ajouter tous les énoncés de la compétition du CEGL 2016
-+ Ajuster la taille du div lorsqu'on expand des challenges 
++ <del>Ajuster la taille du div lorsqu'on expand des challenges</del> 
