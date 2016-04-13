@@ -1,4 +1,4 @@
-[PolyAlgo](http://aboisier.github.io/Polyalgo)
+[PolyAlgo](http://polyalgo.github.io/PolyAlgo/)
 ===
 
 Vous trouverez sur ce repository le site web du club **PolyAlgo** de l'[école Polytechnique de Montréal](http://www.polymtl.ca/). Vous trouverez également des solutions à divers challenges de programmation et d'algorithmie, dans le sous-dossier Documentation.
@@ -7,7 +7,7 @@ Liens
 ---
 
 * [Page facebook du club](https://www.facebook.com/PolyAlgo)
-* [Site web du club](http://aboisier.github.io/Polyalgo/)
+* [Site web du club](http://polyalgo.github.io/PolyAlgo/)
 
 Copyright et License
 ---
