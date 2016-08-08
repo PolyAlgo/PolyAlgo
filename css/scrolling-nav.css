@@ -235,7 +235,7 @@ html { width: 100%; height: 100%; }
 		padding-top: 75px;
 		text-align: center;
 		background: #eee;
-        background-image: url('../images/white-noise.png');
+        background-image: url('../images/grey-noise.png');
 	}
 
 	.partenaires-section {
@@ -296,7 +296,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #eee;
-        background-image: url('../images/white-noise.png');
+        background-image: url('../images/grey-noise.png');
 	}
 	
 	.partenaires-section {
