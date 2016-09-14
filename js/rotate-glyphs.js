@@ -1,6 +1,6 @@
 window.onload = function () {
-	$('.fr').removeClass('hide-lang');
-	$('.en').addClass('hide-lang');
+	$('.en').removeClass('hide-lang');
+	$('.fr').addClass('hide-lang');
 }
 
 function rotateOnClick(glyph, name) {
