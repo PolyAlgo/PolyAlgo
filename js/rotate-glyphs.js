@@ -1,6 +1,11 @@
+window.onload = function () {
+	$('.fr').removeClass('hide-lang');
+	$('.en').addClass('hide-lang');
+}
+
 function rotateOnClick(glyph, name) {
-	 
-	 $(name).collapse("toggle");	
+
+	 $(name).collapse("toggle");
 
 	 if($(name).attr("aria-expanded") == "true")
 	 {

@@ -119,7 +119,9 @@ html { width: 100%; height: 100%; }
 
 .fr { display: block; }
 
-.en { display: block !important; }
+.en { display: block; }
+
+.hide-lang { display: none !important; }
 
 .needs-translation { color: red !important; }
 
