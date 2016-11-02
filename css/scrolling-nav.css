@@ -255,6 +255,10 @@ html { width: 100%; height: 100%; }
         background-image: url('../images/white-noise.png');
 	}
 
+    .logo-giro {
+        padding-bottom: 1em;
+    }
+
 	.contacter-section {
 		min-height: 82%;
 		padding-top: 75px;
@@ -321,7 +325,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #eee;
-        	background-image: url('../images/grey-noise.png');
+        background-image: url('../images/grey-noise.png');
 	}
 
 	.algos-section {
