@@ -252,7 +252,7 @@ html { width: 100%; height: 100%; }
 		padding-top: 75px;
 		text-align: center;
 		background: #fff;
-        background-image: url('../images/grey-noise.png');
+        background-image: url('../images/white-noise.png');
 	}
 
 	.contacter-section {
@@ -261,7 +261,7 @@ html { width: 100%; height: 100%; }
 		text-align: center;
         height: 82%;
 		background: #eee;
-        background-image: url('../images/white-noise.png');
+        background-image: url('../images/grey-noise.png');
 	}
 
 	.algos-section {
@@ -313,7 +313,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #fff;
-        background-image: url('../images/grey-noise.png');
+        background-image: url('../images/white-noise.png');
 	}
 
 	.contacter-section {
@@ -321,7 +321,7 @@ html { width: 100%; height: 100%; }
 		padding-bottom: 50px;
 		text-align: center;
 		background: #eee;
-        	background-image: url('../images/white-noise.png');
+        	background-image: url('../images/grey-noise.png');
 	}
 
 	.algos-section {
